@@ -5,14 +5,17 @@
     .red {
         color: red
     }
+    .green {
+        color: green
+    }
 </style>
 
 <div class="text-center">
-    <h2>Host: <span class="red">@Environment.MachineName</span></h2>
-    <h2>OS Version: <span class="red">@Environment.OSVersion</span></h2>
-    <h2>Process ID: <span class="red">@Environment.ProcessId</span></h2>
-    <h2>ASPNETCORE_ENVIRONMENT: <span class="red">@Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")</span></h2>
-    <h2>Valor em memória: <span class="red">@ViewBag.ValorEmMemoria</span></h2>
+    <h2>Host: <span class="green">@Environment.MachineName</span></h2>
+    <h2>OS Version: <span class="green">@Environment.OSVersion</span></h2>
+    <h2>Process ID: <span class="green">@Environment.ProcessId</span></h2>
+    <h2>ASPNETCORE_ENVIRONMENT: <span class="green">@Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")</span></h2>
+    <h2>Valor em memória: <span class="green">@ViewBag.ValorEmMemoria</span></h2>
     <br />
     <p>
         <a class="btn btn-success" asp-action="PreencherValorEmMemoria">Preencher valor em memória</a>
